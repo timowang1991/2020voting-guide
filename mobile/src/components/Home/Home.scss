@@ -1,0 +1,29 @@
+@import '../../css/variable';
+
+.page-home{
+  h2{
+    line-height: 160%;
+  }
+  &__primary-btn-wrap{
+    display: flex;
+    flex-direction: column;
+    .page-home__primary-btn-wrap-inner{
+      text-align: center;
+      & + .page-home__primary-btn-wrap-inner{
+        margin-top: 22px;
+      }
+    }
+  }
+  .page-home__primary-btn{
+    border-radius: 0;
+    padding: 15px 12px;
+    border-width: 2px;
+    width: 180px;
+  }
+  .page-home__quick-btn + .page-home__quick-btn{
+    margin-top: 10px;
+  }
+  &__how{
+    background-color: $color-primary;
+  }
+}
